@@ -510,3 +510,141 @@ footer {
     }
 
 }
+
+/* ========================================
+   VIDEO LIGHTBOX
+======================================== */
+
+.video-project {
+    cursor: pointer;
+}
+
+
+/* Dark background */
+
+.video-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 5vw;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+
+/* Open state */
+
+.video-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Video modal */
+
+.video-modal {
+    width: min(1100px, 100%);
+
+    transform: translateY(20px);
+
+    transition: transform 0.4s ease;
+}
+
+
+.video-lightbox.active .video-modal {
+    transform: translateY(0);
+}
+
+
+/* YouTube player */
+
+.video-player {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #000;
+}
+
+
+.video-player iframe {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    border: none;
+}
+
+
+/* Video title */
+
+.modal-info {
+    padding-top: 20px;
+}
+
+
+.modal-info h3 {
+    font-size: 20px;
+
+    font-weight: 400;
+
+    color: #f7f7f5;
+}
+
+
+/* Close button */
+
+.close-video {
+    position: fixed;
+
+    top: 25px;
+    right: 35px;
+
+    z-index: 1001;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #fff;
+
+    font-size: 38px;
+    font-weight: 200;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    opacity: 0.7;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.close-video:hover {
+    opacity: 1;
+}
