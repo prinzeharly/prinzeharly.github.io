@@ -101,57 +101,95 @@
             </div>
 
 
-            <!-- Video -->
-            <div class="work-category video-category">
+<!-- Video -->
+<div class="work-category video-category">
 
-                <div class="category-header">
-                    <h3>Video</h3>
-                    <p>Selected filmmaking projects</p>
-                </div>
+    <div class="category-header">
+        <h3>Video</h3>
+        <p>Selected filmmaking projects</p>
+    </div>
 
-                <div class="video-grid">
+    <div class="video-grid">
 
-                    <a href="#" class="video-project">
+        <!-- Video Project 1 -->
+        <div class="video-project"
+             onclick="openVideo('OOSJRSH2zCE', 'St. Louis 1 - Brand New Day')">
 
-                        <div class="video-thumbnail">
-                            <img
-                                src="assets/photos/video-01.jpg"
-                                alt="Video project thumbnail"
-                            >
+            <div class="video-thumbnail">
 
-                            <span class="play-button">▶</span>
-                        </div>
+                <img
+                    src="assets/photos/video-01.jpg"
+                    alt="St. Louis 1 - Brand New Day thumbnail"
+                >
 
-                        <div class="video-info">
-                            <h4>Project One</h4>
-                            <p>Short Film · 2026</p>
-                        </div>
-
-                    </a>
-
-
-                    <a href="#" class="video-project">
-
-                        <div class="video-thumbnail">
-                            <img
-                                src="assets/photos/video-02.jpg"
-                                alt="Video project thumbnail"
-                            >
-
-                            <span class="play-button">▶</span>
-                        </div>
-
-                        <div class="video-info">
-                            <h4>Project Two</h4>
-                            <p>Film · 2026</p>
-                        </div>
-
-                    </a>
-
-                </div>
+                <span class="play-button">▶</span>
 
             </div>
 
+            <div class="video-info">
+                <h4>St. Louis 1 - Brand New Day</h4>
+                <p>Short Film · 2026</p>
+            </div>
+
+        </div>
+
+
+        <!-- Video Project 2 -->
+        <div class="video-project"
+             onclick="openVideo('kjd-17AFLSo', 'JAKARTA')">
+
+            <div class="video-thumbnail">
+
+                <img
+                    src="assets/photos/video-02.jpg"
+                    alt="JAKARTA thumbnail"
+                >
+
+                <span class="play-button">▶</span>
+
+            </div>
+
+            <div class="video-info">
+                <h4>JAKARTA</h4>
+                <p>Travel Film · 2025</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Video Lightbox -->
+<div id="video-lightbox" class="video-lightbox">
+
+    <button class="close-video" onclick="closeVideo()">
+        ×
+    </button>
+
+    <div class="video-modal">
+
+        <div class="video-player">
+
+            <iframe
+                id="youtube-player"
+                src=""
+                title="Video player"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <div class="modal-info">
+            <h3 id="video-title"></h3>
+        </div>
+
+    </div>
+
+</div>
         </section>
 
 
@@ -240,5 +278,63 @@
 
     </footer>
 
+<script>
+
+function openVideo(videoId, title) {
+
+    const lightbox = document.getElementById("video-lightbox");
+    const player = document.getElementById("youtube-player");
+    const videoTitle = document.getElementById("video-title");
+
+    player.src =
+        "https://www.youtube.com/embed/" +
+        videoId +
+        "?autoplay=1&rel=0";
+
+    videoTitle.textContent = title;
+
+    lightbox.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+function closeVideo() {
+
+    const lightbox = document.getElementById("video-lightbox");
+    const player = document.getElementById("youtube-player");
+
+    lightbox.classList.remove("active");
+
+    // Stop the video when closing
+    player.src = "";
+
+    document.body.style.overflow = "";
+}
+
+
+// Close when clicking outside the video
+document
+    .getElementById("video-lightbox")
+    .addEventListener("click", function(event) {
+
+        if (event.target === this) {
+            closeVideo();
+        }
+
+    });
+
+
+// Close with ESC
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeVideo();
+    }
+
+});
+
+</script>
+    
 </body>
 </html>
