@@ -2,339 +2,514 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Prinze Harly — Photographer & Future Engineer</title>
+    <title>Prinze Harly — Photographer, Videographer &amp; Future Engineer</title>
+    <meta name="description" content="Portfolio of Prinze Harly — student, photographer, videographer, and aspiring engineer. Photographs from Seoul, Busan, Surabaya, Sydney and Melbourne, and short films.">
+    <link rel="canonical" href="https://prinzeharly.com/">
 
-    <meta
-        name="description"
-        content="Personal portfolio of Prinze Harly — student, photographer, videographer, and future engineer."
-    >
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Prinze Harly — Photographer, Videographer &amp; Future Engineer">
+    <meta property="og:description" content="Capturing the world. Building what's next.">
+    <meta property="og:url" content="https://prinzeharly.com/">
+    <meta property="og:image" content="https://prinzeharly.com/assets/img/photo-06-1024.jpg">
+    <meta name="theme-color" content="#ffffff">
 
+    <link rel="preload" href="assets/fonts/texgyreheros-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" as="image" type="image/webp"
+          imagesrcset="assets/img/photo-06-640.webp 640w, assets/img/photo-06-1024.webp 1024w, assets/img/photo-06-1369.webp 1369w"
+          imagesizes="(min-width: 1024px) 40vw, (min-width: 640px) 60vw, 100vw">
     <link rel="stylesheet" href="style.css">
+
+    <script>document.documentElement.classList.add('js');</script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <a href="#" class="logo">PRINZE HARLY</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
-        <nav>
-            <a href="#work">Work</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+<!-- ============ HEADER ============ -->
+<header class="site-header" data-header>
+    <div class="site-header__inner">
+        <a href="#top" class="wordmark" aria-label="Prinze Harly, back to top">PRINZE HARLY</a>
+
+        <nav class="site-nav" aria-label="Primary">
+            <a href="#work" class="nav-link" data-nav="work">Work</a>
+            <a href="#about" class="nav-link" data-nav="about">About</a>
+            <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
         </nav>
-    </header>
 
-
-    <!-- Hero -->
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <p class="eyebrow">STUDENT · PHOTOGRAPHER · VIDEOGRAPHER</p>
-
-                <h1>
-                    Capturing the world.<br>
-                    Building what's next.
-                </h1>
-
-                <p class="hero-description">
-                    I'm a student passionate about photography, filmmaking,
-                    and engineering — documenting the world through a camera
-                    while preparing to build things beyond it.
-                </p>
-
-                <a href="#work" class="scroll-link">
-                    View my work ↓
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- Selected Work -->
-        <section id="work" class="work">
-
-            <div class="section-header">
-                <p class="section-number">01</p>
-
-                <div>
-                    <p class="eyebrow">SELECTED WORK</p>
-                    <h2>Photography & Video</h2>
-                </div>
-            </div>
-
-
-            <!-- Photography -->
-            <div class="work-category">
-
-                <div class="category-header">
-                    <h3>Photography</h3>
-                    <p>Selected photographs</p>
-                </div>
-
-                <div class="photo-grid">
-
-                    <div class="photo large">
-                        <img src="assets/photos/photo-01.jpg" alt="Photography project">
-                    </div>
-
-                    <div class="photo">
-                        <img src="assets/photos/photo-02.jpg" alt="Photography project">
-                    </div>
-
-                    <div class="photo">
-                        <img src="assets/photos/photo-03.jpg" alt="Photography project">
-                    </div>
-
-                    <div class="photo wide">
-                        <img src="assets/photos/photo-04.jpg" alt="Photography project">
-                    </div>
-
-                </div>
-
-            </div>
-
-
-<!-- Video -->
-<div class="work-category video-category">
-
-    <div class="category-header">
-        <h3>Video</h3>
-        <p>Selected filmmaking projects</p>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+            <span class="menu-toggle__label" data-menu-label>Menu</span>
+            <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
     </div>
+    <span class="site-header__rule" aria-hidden="true"></span>
+</header>
 
-    <div class="video-grid">
-
-        <!-- Video Project 1 -->
-        <div class="video-project"
-             onclick="openVideo('OOSJRSH2zCE', 'St. Louis 1 - Brand New Day')">
-
-            <div class="video-thumbnail">
-
-                <img
-                    src="assets/photos/video-01.jpg"
-                    alt="St. Louis 1 - Brand New Day thumbnail"
-                >
-
-                <span class="play-button">▶</span>
-
-            </div>
-
-            <div class="video-info">
-                <h4>St. Louis 1 - Brand New Day</h4>
-                <p>Marketing Campaign · 2026</p>
-            </div>
-
-        </div>
-
-
-        <!-- Video Project 2 -->
-        <div class="video-project"
-             onclick="openVideo('kjd-17AFLSo', 'JAKARTA')">
-
-            <div class="video-thumbnail">
-
-                <img
-                    src="assets/photos/video-02.jpg"
-                    alt="JAKARTA thumbnail"
-                >
-
-                <span class="play-button">▶</span>
-
-            </div>
-
-            <div class="video-info">
-                <h4>JAKARTA</h4>
-                <p>Travel Film · 2025</p>
-            </div>
-
-        </div>
-
-    </div>
-
+<div class="mobile-menu" id="mobile-menu" data-menu hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+        <a href="#work" class="mobile-menu__link" style="--i:0">Work</a>
+        <a href="#about" class="mobile-menu__link" style="--i:1">About</a>
+        <a href="#contact" class="mobile-menu__link" style="--i:2">Contact</a>
+    </nav>
+    <p class="mobile-menu__foot" style="--i:3">
+        <a href="mailto:prinze.harly@outlook.com">prinze.harly@outlook.com</a>
+    </p>
 </div>
 
 
-<!-- Video Lightbox -->
-<div id="video-lightbox" class="video-lightbox">
+<main id="main">
 
-    <button class="close-video" onclick="closeVideo()">
-        ×
+    <!-- ============ HERO ============ -->
+    <section class="hero grid" id="top" aria-labelledby="hero-title">
+
+        <h1 class="hero__title" id="hero-title">
+            <span class="line"><span class="line__inner" style="--i:0">Capturing</span></span>
+            <span class="line"><span class="line__inner" style="--i:1">the world.</span></span>
+            <span class="line line--step"><span class="line__inner" style="--i:2">Building</span></span>
+            <span class="line line--step"><span class="line__inner" style="--i:3">what’s next.</span></span>
+        </h1>
+
+        <figure class="hero__plate">
+            <a class="frame frame--hero frame--link" href="assets/img/photo-06-1369.webp" data-viewer="photo"
+               data-title="Haeundae, Busan" data-meta="22 December 2025 · Sony ZV-E10 · 32 mm · f/4 · 1/800 s · ISO 80"
+               data-full="assets/img/photo-06-1369.webp" data-ratio="0.6685"
+               aria-label="View the frontispiece, a beach train in Haeundae, Busan, full size">
+                <span class="frame__parallax" data-parallax="0.06">
+                    <picture class="frame__media">
+                        <source type="image/webp"
+                                srcset="assets/img/photo-06-640.webp 640w, assets/img/photo-06-1024.webp 1024w, assets/img/photo-06-1369.webp 1369w"
+                                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 60vw, 100vw">
+                        <img src="assets/img/photo-06-1024.jpg" width="1369" height="2048" decoding="async" fetchpriority="high"
+                             alt="A green vintage-style beach train, number 45, approaching on elevated coastal tracks, seen through a train window with Busan's high-rises and the sea behind.">
+                    </picture>
+                </span>
+                <span class="frame__hint" aria-hidden="true">View</span>
+            </a>
+            <figcaption class="titleblock titleblock--hero">
+                <span class="titleblock__rule" aria-hidden="true"></span>
+                <span class="titleblock__id">
+                    <span class="titleblock__num">Frontispiece</span>
+                    <span class="titleblock__place">Haeundae, Busan</span>
+                </span>
+                <dl class="spec">
+                    <div><dt>Focal</dt><dd>32 mm</dd></div>
+                    <div><dt>Aperture</dt><dd>f/4</dd></div>
+                    <div><dt>Shutter</dt><dd>1/800 s</dd></div>
+                    <div><dt>ISO</dt><dd>80</dd></div>
+                </dl>
+            </figcaption>
+        </figure>
+
+        <div class="hero__intro">
+            <p class="hero__lede">
+                I’m Prinze Harly, a student passionate about photography, filmmaking,
+                and engineering — documenting the world through a camera while
+                preparing to build things beyond it.
+            </p>
+            <ul class="roles" aria-label="Roles">
+                <li>Student</li>
+                <li>Photographer</li>
+                <li>Videographer</li>
+                <li>Aspiring engineer</li>
+            </ul>
+            <a href="#work" class="text-link text-link--down">
+                <span>See the work</span>
+                <svg class="text-link__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1v10M1.5 6.5 6 11l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="work" id="work" aria-labelledby="work-title">
+
+        <header class="section-head grid" data-reveal>
+            <span class="section-head__rule" aria-hidden="true"></span>
+            <h2 class="section-head__title" id="work-title">Selected work</h2>
+            <p class="section-head__note">Eight photographs and two films, 2024–2026. Plates are listed in the order they were taken.</p>
+        </header>
+
+        <!-- Plate 1: Gyeongbokgung — wide, caption right -->
+        <figure class="plate plate--wide grid">
+            <a class="frame frame--link" href="assets/img/photo-07-2048.webp" data-reveal data-viewer="photo"
+               data-title="Gyeongbokgung Palace, Seoul" data-meta="29 December 2024 · Sony ZV-E10 · 50 mm · f/5.6 · 1/50 s · ISO 800"
+               data-full="assets/img/photo-07-2048.webp" data-ratio="1.5004"
+               aria-label="View Plate 1, Heungnyemun Gate, Gyeongbokgung Palace, full size">
+                <span class="frame__parallax" data-parallax="0.05">
+                    <picture class="frame__media">
+                        <source type="image/webp"
+                                srcset="assets/img/photo-07-640.webp 640w, assets/img/photo-07-1024.webp 1024w, assets/img/photo-07-1440.webp 1440w, assets/img/photo-07-2048.webp 2048w"
+                                sizes="(min-width: 1024px) 76vw, 100vw">
+                        <img src="assets/img/photo-07-1024.jpg" width="2048" height="1365" loading="lazy" decoding="async"
+                             alt="Visitors in hanbok and winter coats walking toward Heungnyemun Gate at Gyeongbokgung Palace, mountains behind under a clear blue sky.">
+                    </picture>
+                </span>
+                <span class="frame__hint" aria-hidden="true">View</span>
+            </a>
+            <figcaption class="titleblock" data-reveal>
+                <span class="titleblock__rule" aria-hidden="true"></span>
+                <span class="titleblock__num">Plate 1</span>
+                <span class="titleblock__place">Gyeongbokgung Palace, Seoul</span>
+                <span class="titleblock__date"><time datetime="2024-12-29T10:12">29 December 2024</time><span class="titleblock__camera">Sony ZV-E10</span></span>
+                <dl class="spec">
+                    <div><dt>Focal</dt><dd>50 mm</dd></div>
+                    <div><dt>Aperture</dt><dd>f/5.6</dd></div>
+                    <div><dt>Shutter</dt><dd>1/50 s</dd></div>
+                    <div><dt>ISO</dt><dd>800</dd></div>
+                </dl>
+            </figcaption>
+        </figure>
+
+        <!-- Plate 2: roof detail — inset, caption left -->
+        <figure class="plate plate--inset grid">
+            <a class="frame frame--link" href="assets/img/photo-08-2048.webp" data-reveal data-viewer="photo"
+               data-title="Gyeongbokgung Palace, Seoul" data-meta="29 December 2024 · Sony ZV-E10 · 50 mm · f/5.6 · 1/50 s · ISO 1250"
+               data-full="assets/img/photo-08-2048.webp" data-ratio="1.5004"
+               aria-label="View Plate 2, roof detail, Gyeongbokgung Palace, full size">
+                <span class="frame__parallax" data-parallax="0.06">
+                    <picture class="frame__media">
+                        <source type="image/webp"
+                                srcset="assets/img/photo-08-640.webp 640w, assets/img/photo-08-1024.webp 1024w, assets/img/photo-08-1440.webp 1440w, assets/img/photo-08-2048.webp 2048w"
+                                sizes="(min-width: 1024px) 52vw, (min-width: 640px) 88vw, 100vw">
+                        <img src="assets/img/photo-08-1024.jpg" width="2048" height="1365" loading="lazy" decoding="async"
+                             alt="Low-angle detail of a palace roof corner: a carved stone guardian at the tip of the eave and painted rafters against a pale blue sky.">
+                    </picture>
+                </span>
+                <span class="frame__hint" aria-hidden="true">View</span>
+            </a>
+            <figcaption class="titleblock" data-reveal>
+                <span class="titleblock__rule" aria-hidden="true"></span>
+                <span class="titleblock__num">Plate 2</span>
+                <span class="titleblock__place">Gyeongbokgung Palace, Seoul</span>
+                <span class="titleblock__date"><time datetime="2024-12-29T10:20">29 December 2024</time><span class="titleblock__camera">Sony ZV-E10</span></span>
+                <dl class="spec">
+                    <div><dt>Focal</dt><dd>50 mm</dd></div>
+                    <div><dt>Aperture</dt><dd>f/5.6</dd></div>
+                    <div><dt>Shutter</dt><dd>1/50 s</dd></div>
+                    <div><dt>ISO</dt><dd>1250</dd></div>
+                </dl>
+            </figcaption>
+        </figure>
+
+        <!-- Plates 3 + 4: two bridges — diptych, bottom-aligned -->
+        <div class="plate-diptych grid">
+        <figure class="plate plate--c">
+            <a class="frame frame--link" href="assets/img/photo-05-1536.webp" data-reveal data-viewer="photo"
+               data-title="Suramadu Bridge, Surabaya" data-meta="6 April 2026 · iPhone 17 Pro · 200 mm eq. · f/2.8 · 1/1050 s · ISO 20"
+               data-full="assets/img/photo-05-1536.webp" data-ratio="0.75"
+               aria-label="View Plate 3, Suramadu Bridge, full size">
+                <span class="frame__parallax" data-parallax="0.05">
+                    <picture class="frame__media">
+                        <source type="image/webp"
+                                srcset="assets/img/photo-05-640.webp 640w, assets/img/photo-05-1024.webp 1024w, assets/img/photo-05-1440.webp 1440w, assets/img/photo-05-1536.webp 1536w"
+                                sizes="(min-width: 640px) 42vw, 100vw">
+                        <img src="assets/img/photo-05-1024.jpg" width="1536" height="2048" loading="lazy" decoding="async"
+                             alt="The cable-stayed Suramadu Bridge in pale haze over green water, a lone fisherman standing in a small wooden boat beneath its two towers.">
+                    </picture>
+                </span>
+                <span class="frame__hint" aria-hidden="true">View</span>
+            </a>
+            <figcaption class="titleblock" data-reveal>
+                <span class="titleblock__rule" aria-hidden="true"></span>
+                <span class="titleblock__num">Plate 3</span>
+                <span class="titleblock__place">Suramadu Bridge, Surabaya</span>
+                <span class="titleblock__date"><time datetime="2026-04-06T09:48">6 April 2026</time><span class="titleblock__camera">iPhone 17 Pro</span></span>
+                <dl class="spec">
+                    <div><dt>Focal</dt><dd>200 mm eq.</dd></div>
+                    <div><dt>Aperture</dt><dd>f/2.8</dd></div>
+                    <div><dt>Shutter</dt><dd>1/1050 s</dd></div>
+                    <div><dt>ISO</dt><dd>20</dd></div>
+                </dl>
+            </figcaption>
+        </figure>
+        <figure class="plate plate--d">
+            <a class="frame frame--link" href="assets/img/photo-04-2048.webp" data-reveal data-viewer="photo"
+               data-title="Circular Quay, Sydney" data-meta="25 June 2026 · Sony ZV-E10 · 27 mm · f/4.5 · 1/320 s · ISO 100"
+               data-full="assets/img/photo-04-2048.webp" data-ratio="1.5004"
+               aria-label="View Plate 4, Circular Quay, Sydney, full size">
+                <span class="frame__parallax" data-parallax="0.04">
+                    <picture class="frame__media">
+                        <source type="image/webp"
+                                srcset="assets/img/photo-04-640.webp 640w, assets/img/photo-04-1024.webp 1024w, assets/img/photo-04-1440.webp 1440w, assets/img/photo-04-2048.webp 2048w"
+                                sizes="(min-width: 640px) 50vw, 100vw">
+                        <img src="assets/img/photo-04-1024.jpg" width="2048" height="1365" loading="lazy" decoding="async"
+                             alt="The yellow-and-green Sydney ferry Fishburn moored at Circular Quay, with the Harbour Bridge in grey haze behind.">
+                    </picture>
+                </span>
+                <span class="frame__hint" aria-hidden="true">View</span>
+            </a>
+            <figcaption class="titleblock" data-reveal>
+                <span class="titleblock__rule" aria-hidden="true"></span>
+                <span class="titleblock__num">Plate 4</span>
+                <span class="titleblock__place">Circular Quay, Sydney</span>
+                <span class="titleblock__date"><time datetime="2026-06-25">25 June 2026</time><span class="titleblock__camera">Sony ZV-E10</span></span>
+                <dl class="spec">
+                    <div><dt>Focal</dt><dd>27 mm</dd></div>
+                    <div><dt>Aperture</dt><dd>f/4.5</dd></div>
+                    <div><dt>Shutter</dt><dd>1/320 s</dd></div>
+                    <div><dt>ISO</dt><dd>100</dd></div>
+                </dl>
+            </figcaption>
+        </figure>
+        </div>
+
+        <!-- Plates 5 + 6: State Library Victoria — offset pair -->
+        <div class="plate-pair grid">
+        <figure class="plate plate--portrait plate--a">
+            <a class="frame frame--link" href="assets/img/photo-01-1365.webp" data-reveal data-viewer="photo"
+               data-title="State Library Victoria, Melbourne" data-meta="1 July 2026, 12:34 · Sony ZV-E10 · 25 mm · f/4 · 1/250 s · ISO 160"
+               data-full="assets/img/photo-01-1365.webp" data-ratio="0.6665"
+               aria-label="View Plate 5, State Library Victoria forecourt, full size">
+                <span class="frame__parallax" data-parallax="0.04">
+                    <picture class="frame__media">
+                        <source type="image/webp"
+                                srcset="assets/img/photo-01-640.webp 640w, assets/img/photo-01-1024.webp 1024w, assets/img/photo-01-1365.webp 1365w"
+                                sizes="(min-width: 900px) 38vw, 100vw">
+                        <img src="assets/img/photo-01-1024.jpg" width="1365" height="2048" loading="lazy" decoding="async"
+                             alt="Giant chess pieces on the forecourt of State Library Victoria; a man in a black hoodie watches the game beneath a bronze equestrian statue.">
+                    </picture>
+                </span>
+                <span class="frame__hint" aria-hidden="true">View</span>
+            </a>
+            <figcaption class="titleblock" data-reveal>
+                <span class="titleblock__rule" aria-hidden="true"></span>
+                <span class="titleblock__num">Plate 5</span>
+                <span class="titleblock__place">State Library Victoria, Melbourne</span>
+                <span class="titleblock__date"><time datetime="2026-07-01T12:34">1 July 2026, 12:34</time><span class="titleblock__camera">Sony ZV-E10</span></span>
+                <dl class="spec">
+                    <div><dt>Focal</dt><dd>25 mm</dd></div>
+                    <div><dt>Aperture</dt><dd>f/4</dd></div>
+                    <div><dt>Shutter</dt><dd>1/250 s</dd></div>
+                    <div><dt>ISO</dt><dd>160</dd></div>
+                </dl>
+            </figcaption>
+        </figure>
+        <figure class="plate plate--portrait plate--b">
+            <a class="frame frame--link" href="assets/img/photo-02-1365.webp" data-reveal data-viewer="photo"
+               data-title="State Library Victoria, Melbourne" data-meta="1 July 2026, 12:35 · Sony ZV-E10 · 28 mm · f/4 · 1/250 s · ISO 100"
+               data-full="assets/img/photo-02-1365.webp" data-ratio="0.6665"
+               aria-label="View Plate 6, State Library Victoria portico, full size">
+                <span class="frame__parallax" data-parallax="0.07">
+                    <picture class="frame__media">
+                        <source type="image/webp"
+                                srcset="assets/img/photo-02-640.webp 640w, assets/img/photo-02-1024.webp 1024w, assets/img/photo-02-1365.webp 1365w"
+                                sizes="(min-width: 900px) 32vw, 100vw">
+                        <img src="assets/img/photo-02-1024.jpg" width="1365" height="2048" loading="lazy" decoding="async"
+                             alt="Statue of Sir Redmond Barry before the columned portico of State Library Victoria, with flags and a high-rise against a white sky.">
+                    </picture>
+                </span>
+                <span class="frame__hint" aria-hidden="true">View</span>
+            </a>
+            <figcaption class="titleblock" data-reveal>
+                <span class="titleblock__rule" aria-hidden="true"></span>
+                <span class="titleblock__num">Plate 6</span>
+                <span class="titleblock__place">State Library Victoria, Melbourne</span>
+                <span class="titleblock__date"><time datetime="2026-07-01T12:35">1 July 2026, 12:35</time><span class="titleblock__camera">Sony ZV-E10</span></span>
+                <dl class="spec">
+                    <div><dt>Focal</dt><dd>28 mm</dd></div>
+                    <div><dt>Aperture</dt><dd>f/4</dd></div>
+                    <div><dt>Shutter</dt><dd>1/250 s</dd></div>
+                    <div><dt>ISO</dt><dd>100</dd></div>
+                </dl>
+            </figcaption>
+        </figure>
+        </div>
+
+        <!-- Plate 7: Point Ormond — full bleed -->
+        <figure class="plate plate--bleed">
+            <a class="frame frame--link frame--bleed" href="assets/img/photo-03-2048.webp" data-reveal data-viewer="photo"
+               data-title="Point Ormond, Melbourne" data-meta="3 July 2026 · Sony ZV-E10 · 18 mm · f/4 · 1/250 s · ISO 8000"
+               data-full="assets/img/photo-03-2048.webp" data-ratio="1.5004"
+               aria-label="View Plate 7, Point Ormond, full size">
+                <span class="frame__parallax" data-parallax="0.08">
+                    <picture class="frame__media">
+                        <source type="image/webp"
+                                srcset="assets/img/photo-03-640.webp 640w, assets/img/photo-03-1024.webp 1024w, assets/img/photo-03-1440.webp 1440w, assets/img/photo-03-2048.webp 2048w"
+                                sizes="100vw">
+                        <img src="assets/img/photo-03-1024.jpg" width="2048" height="1365" loading="lazy" decoding="async"
+                             alt="Wide view of the Point Ormond hilltop at dusk: a dark ridge, a timber lookout tower and a small group of silhouetted people under low cloud.">
+                    </picture>
+                </span>
+                <span class="frame__hint" aria-hidden="true">View</span>
+            </a>
+            <figcaption class="titleblock titleblock--bleed grid" data-reveal>
+                <span class="titleblock__rule" aria-hidden="true"></span>
+                <span class="titleblock__num">Plate 7</span>
+                <span class="titleblock__place">Point Ormond, Melbourne</span>
+                <span class="titleblock__date"><time datetime="2026-07-03T14:38">3 July 2026</time><span class="titleblock__camera">Sony ZV-E10</span></span>
+                <dl class="spec">
+                    <div><dt>Focal</dt><dd>18 mm</dd></div>
+                    <div><dt>Aperture</dt><dd>f/4</dd></div>
+                    <div><dt>Shutter</dt><dd>1/250 s</dd></div>
+                    <div><dt>ISO</dt><dd>8000</dd></div>
+                </dl>
+            </figcaption>
+        </figure>
+
+        <!-- Films -->
+        <div class="films" aria-labelledby="films-title">
+            <header class="films__head grid" data-reveal>
+                <span class="section-head__rule" aria-hidden="true"></span>
+                <h3 class="films__title" id="films-title">Film</h3>
+                <p class="films__note">Two short films. Each opens in a player here.</p>
+            </header>
+
+            <article class="film film--a grid">
+                <a class="film__frame" href="https://www.youtube.com/watch?v=OOSJRSH2zCE" data-reveal
+                   data-viewer="film" data-video="OOSJRSH2zCE"
+                   data-title="St. Louis 1 – Brand New Day" data-meta="Marketing campaign, 2026"
+                   aria-label="Play St. Louis 1 – Brand New Day">
+                    <span class="frame__parallax">
+                        <picture class="frame__media">
+                            <source type="image/webp"
+                                    srcset="assets/img/video-01-640.webp 640w, assets/img/video-01-1024.webp 1024w, assets/img/video-01-1440.webp 1440w, assets/img/video-01-1920.webp 1920w"
+                                    sizes="(min-width: 900px) 66vw, 100vw">
+                            <img src="assets/img/video-01-1024.jpg" width="1920" height="1080" loading="lazy" decoding="async"
+                                 alt="Still from St. Louis 1 – Brand New Day: a cream 1923 school facade above red-and-white bunting.">
+                        </picture>
+                    </span>
+                    <span class="film__badge" aria-hidden="true">
+                        <svg viewBox="0 0 10 12"><path d="M0 0v12l10-6z" fill="currentColor"/></svg>
+                        <span>Play film</span>
+                    </span>
+                    <span class="film__scrub" aria-hidden="true"></span>
+                </a>
+                <div class="film__info" data-reveal>
+                    <span class="titleblock__rule" aria-hidden="true"></span>
+                    <h4 class="film__name">St. Louis 1 – Brand New Day</h4>
+                    <dl class="spec spec--film">
+                        <div><dt>Type</dt><dd>Marketing campaign</dd></div>
+                        <div><dt>Year</dt><dd>2026</dd></div>
+                    </dl>
+                </div>
+            </article>
+
+            <article class="film film--b grid">
+                <a class="film__frame" href="https://www.youtube.com/watch?v=hqkZYkvYRbc" data-reveal
+                   data-viewer="film" data-video="kjd-17AFLSo"
+                   data-title="DBL Finals Highlight Reel" data-meta="Sports Highlight, 2025"
+                   aria-label="Play DBL Finals Highlight Reel">
+                    <span class="frame__parallax">
+                        <picture class="frame__media">
+                            <source type="image/webp"
+                                    srcset="assets/img/video-02-640.webp 640w, assets/img/video-02-1024.webp 1024w, assets/img/video-02-1440.webp 1440w, assets/img/video-02-1920.webp 1920w"
+                                    sizes="(min-width: 900px) 66vw, 100vw">
+                            <img src="assets/img/video-02-1024.jpg" width="1920" height="1080" loading="lazy" decoding="async"
+                                 alt="Still from DBL Finals Highlight Reel">
+                        </picture>
+                    </span>
+                    <span class="film__badge" aria-hidden="true">
+                        <svg viewBox="0 0 10 12"><path d="M0 0v12l10-6z" fill="currentColor"/></svg>
+                        <span>Play film</span>
+                    </span>
+                    <span class="film__scrub" aria-hidden="true"></span>
+                </a>
+                <div class="film__info" data-reveal>
+                    <span class="titleblock__rule" aria-hidden="true"></span>
+                    <h4 class="film__name">DBL Finals Highlight Reel</h4>
+                    <dl class="spec spec--film">
+                        <div><dt>Type</dt><dd>Sports Highlight</dd></div>
+                        <div><dt>Year</dt><dd>2025</dd></div>
+                    </dl>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about grid" id="about" aria-labelledby="about-title">
+        <span class="section-head__rule" aria-hidden="true" data-reveal></span>
+        <h2 class="about__label" id="about-title" data-reveal>About</h2>
+
+        <p class="about__intro" data-reveal>
+            I’m currently a student exploring the intersection between creativity and engineering.
+        </p>
+
+        <div class="about__body">
+            <p data-reveal>
+                Photography and filmmaking have become an important part of how I see
+                and understand the world. I enjoy capturing architecture, people, places,
+                and everyday moments.
+            </p>
+            <p data-reveal>
+                At the same time, I’m preparing to pursue engineering and build a future
+                that combines technical thinking with creativity.
+            </p>
+        </div>
+
+        <dl class="about__spec" data-reveal>
+            <div><dt>Practice</dt><dd>Photography, filmmaking</dd></div>
+            <div><dt>Interests</dt><dd>Architecture, real estate imagery, engineering</dd></div>
+            <div><dt>Cameras</dt><dd>Sony ZV-E10</dd></div>
+            <div><dt>Lenses</dt><dd>Sony E PZ 18–105 mm F4 G OSS, Sony E 35mm f/1.8 OSS</dd></div>
+        </dl>
+    </section>
+
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact grid" id="contact" aria-labelledby="contact-title">
+        <span class="section-head__rule" aria-hidden="true" data-reveal></span>
+        <p class="contact__label" data-reveal>Contact</p>
+        <h2 class="contact__title" id="contact-title">
+            <span class="line"><span class="line__inner" data-reveal-line>Let’s connect.</span></span>
+        </h2>
+        <p class="contact__text" data-reveal>
+            Interested in working together, discussing photography, or simply saying hello?
+        </p>
+
+        <div class="contact__email" data-reveal>
+            <a href="mailto:prinze.harly@outlook.com" class="email">prinze.harly@outlook.com</a>
+            <button type="button" class="copy-btn" data-copy="prinze.harly@outlook.com">
+                <span class="copy-btn__text" data-copy-label>Copy address</span>
+            </button>
+            <span class="visually-hidden" role="status" aria-live="polite" data-copy-status></span>
+        </div>
+
+        <dl class="contact__links" data-reveal>
+            <div><dt>Email</dt><dd><a class="u-link" href="mailto:prinze.harly@outlook.com">prinze.harly@outlook.com</a></dd></div>
+            <div><dt>Instagram</dt><dd><a class="u-link" href="https://www.instagram.com/prinze.harly/" rel="noopener" target="_blank">@prinze.harly</a></dd></div>
+            <div><dt>GitHub</dt><dd><a class="u-link" href="https://github.com/prinzeharly" rel="noopener" target="_blank">prinzeharly</a></dd></div>
+        </dl>
+    </section>
+
+</main>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer grid">
+    <span class="site-footer__rule" aria-hidden="true"></span>
+    <p class="site-footer__copy">© 2026 Prinze Harly</p>
+    <p class="site-footer__links">
+        <a class="u-link" href="https://www.instagram.com/prinze.harly/" rel="noopener" target="_blank">Instagram</a>
+        <a class="u-link" href="https://github.com/prinzeharly" rel="noopener" target="_blank">GitHub</a>
+    </p>
+    <a class="site-footer__top u-link" href="#top">Back to top</a>
+</footer>
+
+
+<!-- ============ VIEWER (photos + films) ============ -->
+<dialog class="viewer" data-viewer-dialog aria-labelledby="viewer-title">
+    <div class="viewer__bg" data-viewer-bg></div>
+    <button type="button" class="viewer__close" data-viewer-close>
+        <span>Close</span>
+        <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1 1 13" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
     </button>
-
-    <div class="video-modal">
-
-        <div class="video-player">
-
-            <iframe
-                id="youtube-player"
-                src=""
-                title="Video player"
-                frameborder="0"
-                allow="autoplay; encrypted-media; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-
+    <div class="viewer__layout">
+        <div class="viewer__stage" data-viewer-stage>
+            <img class="viewer__poster" data-viewer-poster alt="">
+            <div class="viewer__player" data-viewer-player></div>
         </div>
-
-        <div class="modal-info">
-            <h3 id="video-title"></h3>
+        <div class="viewer__caption" data-viewer-caption>
+            <h2 class="viewer__title" id="viewer-title" data-viewer-title></h2>
+            <p class="viewer__meta" data-viewer-meta></p>
+            <a class="viewer__yt u-link" data-viewer-yt href="#" target="_blank" rel="noopener">Watch on YouTube</a>
         </div>
-
     </div>
+</dialog>
 
-</div>
-        </section>
-
-
-        <!-- About -->
-        <section id="about" class="about">
-
-            <div class="section-header">
-                <p class="section-number">02</p>
-
-                <div>
-                    <p class="eyebrow">ABOUT</p>
-                    <h2>A little about me</h2>
-                </div>
-            </div>
-
-
-            <div class="about-content">
-
-                <div class="about-text">
-
-                    <p class="about-intro">
-                        I'm currently a student exploring the intersection
-                        between creativity and engineering.
-                    </p>
-
-                    <p>
-                        Photography and filmmaking have become an important
-                        part of how I see and understand the world. I enjoy
-                        capturing architecture, people, places, and everyday
-                        moments.
-                    </p>
-
-                    <p>
-                        At the same time, I'm preparing to pursue engineering
-                        and build a future that combines technical thinking
-                        with creativity.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Contact -->
-        <section id="contact" class="contact">
-
-            <div class="section-header">
-                <p class="section-number">03</p>
-
-                <div>
-                    <p class="eyebrow">CONTACT</p>
-                    <h2>Let's connect.</h2>
-                </div>
-            </div>
-
-
-            <div class="contact-content">
-
-                <p>
-                    Interested in working together, discussing photography,
-                    or simply saying hello?
-                </p>
-
-                <a href="mailto:prinze.harly@outlook.com" class="email">
-                    prinze.harly@outlook.com →
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>© 2026 Prinze Harly</p>
-
-        <div class="footer-links">
-            <a href="https://www.instagram.com/prinze.harly/">Instagram</a>
-            <a href="https://github.com/prinzeharly">GitHub</a>
-        </div>
-
-    </footer>
-
-<script>
-
-function openVideo(videoId, title) {
-
-    const lightbox = document.getElementById("video-lightbox");
-    const player = document.getElementById("youtube-player");
-    const videoTitle = document.getElementById("video-title");
-
-    player.src =
-        "https://www.youtube.com/embed/" +
-        videoId +
-        "?autoplay=1&rel=0";
-
-    videoTitle.textContent = title;
-
-    lightbox.classList.add("active");
-
-    document.body.style.overflow = "hidden";
-}
-
-
-function closeVideo() {
-
-    const lightbox = document.getElementById("video-lightbox");
-    const player = document.getElementById("youtube-player");
-
-    lightbox.classList.remove("active");
-
-    // Stop the video when closing
-    player.src = "";
-
-    document.body.style.overflow = "";
-}
-
-
-// Close when clicking outside the video
-document
-    .getElementById("video-lightbox")
-    .addEventListener("click", function(event) {
-
-        if (event.target === this) {
-            closeVideo();
-        }
-
-    });
-
-
-// Close with ESC
-document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-        closeVideo();
-    }
-
-});
-
-</script>
-    
 </body>
 </html>
