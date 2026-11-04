@@ -353,7 +353,7 @@ ul { list-style: none; }
 .frame__media img { object-fit: cover; }
 
 .frame--hero { aspect-ratio: 4 / 5; }
-.frame--hero img { object-position: 50% 70%; }
+.frame--hero img { object-position: 50% 100%; } /* keep both shell peaks and their base in frame */
 
 .hero__intro {
     display: grid;
